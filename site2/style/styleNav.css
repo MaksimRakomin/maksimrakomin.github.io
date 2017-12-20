@@ -1,0 +1,60 @@
+
+
+.mid {
+    width: 880px;
+    margin: 0 auto;
+    text-align: justify;
+}
+.header {
+    padding: 20px 0;
+}
+.logotype {
+    float: left;
+    margin-top: 15px;
+    width: 139px;
+    height: 56px;
+    background: url(../img/logo.PNG) no-repeat 50% 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+    transition: 0.5s;
+}
+.headhesive{
+    background: white;
+    color: black;
+    position: fixed;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: 0.5s;
+    padding: 0;
+    z-index: 99;
+}
+.headhesive .logotype {
+    width: 179px;
+    height: 34px;
+    background: url(../img/logoDown.png) no-repeat 50% 50%;
+    margin-top: 0px;
+}
+.headhesive nav li {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    padding-top: 7px;
+}
+.headhesive nav li a {
+    padding: 0;
+}
+
+.headhesive nav li a:hover {
+    box-shadow: none;
+}
+.headhesive div.korzina a {
+    float: right;
+    padding-top: 7px;
+    padding-left: 35px;
+    position: relative;
+    padding-right: 0;
+}
+.headhesive--stick {
+   transform: translateY(0);
+    padding: 0;
+}

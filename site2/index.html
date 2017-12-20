@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nerd's</title>
+        <link rel="stylesheet" type="text/css" href="style/base.css">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <link rel="stylesheet" type="text/css" href="style/font-style.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+        <script src="js/headhesive.min.js"></script><!--Библиотека для всплывающего меню при прокрутке-->
+</head>
+<body>
+    <header>
+        <div class="layoutCenterWrapper">
+              <div class="header">
+                <div class="mid">
+                    <div class="logo logotype">
+<!--                        <img src="img/logo.png" class="logotype">-->
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Студия</a></li>
+                            <li><a href="#">Клиенты</a></li>
+                            <li><a href="#">Магазин</a></li>
+                            <li><a href="#" class="openFast">Контакты</a></li>
+                        </ul>
+                        <div class="korzina">
+                            <a href="#">Корзина</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="slideshowConteiner">
+             <div class="mySlides fade">
+                 <div class="numbertext"></div>
+                 <img src="img/Slaid1.png" alt="Математически выверенный дизайн для вашего сайта или мобильного приложения.">
+                 <div class="text">
+                    <h1>Долго, дорого, скурпулезно.</h1>
+                    <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                    <a href="#">Узнать больше</a>
+                 </div>
+             </div>
+             <div class="mySlides fade">
+                 <div class="numbertext"></div>
+                 <img src="img/Slaid2.png" alt="Математически выверенный дизайн для вашего сайта или мобильного приложения.">
+                 <div class="text">
+                    <h1>Любите ли вы математику, как любим ее мы?</h1>
+                    <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
+                    <a href="#">Узнать больше</a>
+                 </div>
+             </div>
+             <div class="mySlides fade">
+                 <div class="numbertext"></div>
+                 <img src="img/Slaid3.png" alt="Математически выверенный дизайн для вашего сайта или мобильного приложения.">
+                 <div class="text">
+                    <h1>Только наркотики, только хардкор!</h1>
+                    <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+                    <a href="#">Узнать больше</a>
+                 </div>
+             </div>
+             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+             <br>
+             <div class="slideNav" style="text-align: center;">
+                 <span class="dot" onclick="currentSlide(1)"></span>
+                 <span class="dot" onclick="currentSlide(2)"></span>
+                 <span class="dot" onclick="currentSlide(3)"></span>
+             </div>
+           </div>
+        </div>
+    </header>
+    <section>
+       <div class="layoutCenterWrapper">          
+            <div class="promo">
+                <ul>
+                    <li>
+                        <img src="img/web-site.PNG" alt="promo">
+                        <h2>Веб-сайты</h2>
+                        <p>Мир никогда не будет прежним после того как увидит Ваш сайт!</p>
+                        <a href="#">Заказать</a>
+                    </li>
+                    <li>
+                        <img src="img/prilogeniya.PNG" alt="promo">
+                        <h2>Приложения</h2>
+                        <p>Покорите ТОР-10 приложений в AppStore  и Google Play</p>
+                        <a href="#">Заказать</a>
+                    </li>
+                    <li>
+                        <img src="img/prizentacii.PNG" alt="promo">
+                        <h2>Презентации</h2>
+                        <p>Вы даже не подозреваете, насколько Вы изумительны!</p>
+                        <a href="#">Заказать</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="opisanie">
+                <div class="textOpisanie">
+                    <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+                    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не поклодая рук, как роботы.</p>
+                    <h3>Выполняем заказы на разработку:</h3>
+                    <ul>
+                        <li>Веб-сайтов любой сложности</li>
+                        <li>Мобильных приложений для iOS и Android</li>
+                        <li>Слайдшоу и видео для корпоративных презентаций</li>
+                    </ul>
+                </div>
+                <img src="img/sova.PNG" alt="opisanie logo">
+            </div>
+            <div class="firmi">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+               <div class="market">
+                <div class="bar">
+                    <h3>Стоимость:</h3>
+                    <div class="priceFilter">
+                       <div class="polzynki">
+                          <div class="fon">
+                             <div class="zapolnenie"></div>
+                          </div>
+                          <div class="togle minTogle"></div>
+                          <div class="togle maxTogle"></div>
+                       </div>
+                       <div class="priceControl">
+                          От <input class="minPriceControl" type=text value="0">
+                          До <input class="maxPriceControl" type=text value="15 000">
+                       </div>
+                    </div>
+                    <h3>Сетка:</h3>
+                    <ul class="setka">
+                        <li><a href="#">Адаптивная</a></li>
+                        <li><a href="#">Фиксированная</a></li>
+                        <li><a href="#">Резиновая</a></li>
+                    </ul>
+                    <h3>Особенности:</h3>
+                    <ul class="osobennosti">
+                        <li><a href="#">Слайдер</a></li>
+                        <li><a href="#">Блок преимушеств</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Галерея</a></li>
+                        <li><a href="#">Корзина</a></li>
+                    </ul>
+                </div>
+                <div class="primeri">
+                    <div class="filtr">
+                        <p>Сортировать:</p>
+                        <a href="#">По цене</a>
+                        <a href="#">По типу</a>
+                        <a href="#">По функционалу</a>
+                    </div>
+                    <div class="site">                    
+                        <div class="siteOn">
+                            <div class="polosa">
+                                <div class="tochka"></div>
+                                <div class="tochka"></div>
+                                <div class="tochka"></div>
+                            </div>
+                            <img src="img/aviator.jpg" alt="Магазин Авиатор">
+                        </div>
+                        <div class="siteOff">
+                            <div class="siteOpisanie">
+                                <h3>Aviator</h3>
+                                <p>Интернет-магазин с личным кабинетом</p>
+                                <a href="#">10 000p.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="site">                    
+                        <div class="siteOn">
+                            <div class="polosa">
+                                <div class="tochka"></div>
+                                <div class="tochka"></div>
+                                <div class="tochka"></div>
+                            </div>
+                            <img src="img/kiosk.PNG" alt="Магазин Киоск">
+                        </div>
+                        <div class="siteOff">
+                            <div class="siteOpisanie">
+                                <h3>Киоск</h3>
+                                <p>Интернет-магазин с личным кабинетом</p>
+                                <a href="#">10 000p.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="site">                    
+                        <div class="siteOn">
+                            <div class="polosa">
+                                <div class="tochka"></div>
+                                <div class="tochka"></div>
+                                <div class="tochka"></div>
+                            </div>
+                            <img src="img/forte.PNG"  alt="Магазин Форте">
+                        </div>
+                        <div class="siteOff">
+                            <div class="siteOpisanie">
+                                <h3>Forte</h3>
+                                <p>Интернет-магазин с личным кабинетом</p>
+                                <a href="#">10 000p.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="site">                    
+                        <div class="siteOn">
+                            <div class="polosa">
+                                <div class="tochka"></div>
+                                <div class="tochka"></div>
+                                <div class="tochka"></div>
+                            </div>
+                            <img src="img/modern.PNG"  alt="Магазин Модерн">
+                        </div>
+                        <div class="siteOff">
+                            <div class="siteOpisanie">
+                                <h3>Modern organic thai</h3>
+                                <p>Интернет-магазин с личным кабинетом</p>
+                                <a href="#">10 000p.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="site">                    
+                        <div class="siteOn">
+                            <div class="polosa">
+                                <div class="tochka"></div>
+                                <div class="tochka"></div>
+                                <div class="tochka"></div>
+                            </div>
+                            <img src="img/avenue.jpg"  alt="Магазин Авеню">
+                        </div>
+                        <div class="siteOff">
+                            <div class="siteOpisanie">
+                                <h3>Avenue</h3>
+                                <p>Интернет-магазин с личным кабинетом</p>
+                                <a href="#">10 000p.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="site">                    
+                        <div class="siteOn">
+                            <div class="polosa">
+                                <div class="tochka"></div>
+                                <div class="tochka"></div>
+                                <div class="tochka"></div>
+                            </div>
+                            <img src="img/dovetail.jpg"  alt="Магазин Доветеил">
+                        </div>
+                        <div class="siteOff">
+                            <div class="siteOpisanie">
+                                <h3>Dovetail</h3>
+                                <p>Интернет-магазин с личным кабинетом</p>
+                                <a href="#">10 000p.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stranici">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">Следующая</a>
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+<!--              <div class="googleMap">-->
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2714.95140169313!2d37.68869671529477!3d47.11962387915542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e6e6338eefcf3f%3A0xecb4ca469900c160!2z0LLRg9C70LjRhtGPINCc0LDRgNGI0LDQu9CwINCW0YPQutC-0LLQsCwgNTgsINCc0LDRgNGW0YPQv9C-0LvRjCwg0JTQvtC90LXRhtGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDg3NTAw!5e0!3m2!1sru!2sru!4v1493740836183" width="880" height="415" style="border:0" allowfullscreen></iframe>
+<!--               </div> -->
+                <div class="adres">
+                    <h3><span>NЁRDS</span> Design studio</h3>
+                    <p>350000, Краснодар,<br>ул. Головатого, 100</p>
+                    <p>тел. +7 (861) 275-75-75</p>
+                    <a href="#form" class="openFast">Напишите нам</a>
+                </div>  
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="layoutCenterWrapper">
+            <div class="social">
+                <a href="#"><div class="vk"></div></a>
+                <a href="#"><div class="fb"></div></a>
+                <a href="#"><div class="ins"></div></a>
+            </div>
+            <div class="friend">
+                <h1>Давайте дружить, это выгодно!</h1>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="popupFast">
+           <form id="form">
+            <div class="formName">
+                <h3>Ваше имя:</h3>
+                <input type="text" class="name" placeholder="Представтесь, пожалуйста">
+            </div>
+            <div class="formMail">
+                <h3>Ваш e-mail:</h3>
+                <input type="email" class="email" placeholder="Для отправки ответа">
+            </div>
+            <div class="formText">
+                <h3>Текст письма</h3>
+                <input type="text" class="text" placeholder="В свободной форме">
+            </div>
+            <button class="submit" type="submit">Отправить</button>
+            <button class="cancel canselPopup">Отмена</button>
+        </form>
+    </div>
+   <div class="bgPopup"></div>
+    
+    
+    
+    
+    <script src="js/js.js"></script><!--Всплывающее меню при прокрутке, слайдер, всплывающая форма-->
+        
+    
+</body>
+</html>
