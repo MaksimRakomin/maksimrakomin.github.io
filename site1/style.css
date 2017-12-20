@@ -1,0 +1,666 @@
+*, html, body, section {
+    padding: 0;
+    margin: 0;
+}
+body {
+   font-size: 16px;
+   font-family: 'PT Sans Narrow', "Arial Narrow", sans-serif;
+   background: black url(img/fon2.png) no-repeat 50% 0%;
+}
+.layoutCenterWrapper {
+    width: 940px;
+    margin: 0px auto;
+    padding: 0 0;
+/*    border: 1px solid red;*/
+}
+.layoutCenterWrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+header {
+    background-color: black;
+    text-transform: uppercase;
+}
+header ul {
+   float: left;
+   margin: 0px;
+    padding: 0px;
+    width: 740px;
+}
+header li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px;
+    margin-right: -0.2em;
+}
+header a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    margin: 0px;
+    display: inline-block;
+    padding: 30px 20px;
+}
+header a:visited,
+header a:active,
+header a:hover {
+    color: white;
+}
+header div.enterAccount {
+    float: right;
+    text-align: right;
+    position: relative;
+}
+header div.enterAccount a{
+    max-width: 140px;
+    min-width: 140px;
+    padding-right: 0px;
+    padding-left: 55px;
+}
+header div.enterAccount:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url(pic/entr.png) no-repeat;
+    position: absolute;
+    top: 32px;
+    right: 40px;
+}
+header div.enterAccount:before {
+    opacity: 0.3;
+}
+header a.active{
+    box-shadow: 0 25px 0 -20px white;
+}
+/*Логотип*/
+section div.logo{
+    width: 370px;
+    margin: 45px auto;
+}
+/*Промо*/
+section div.promo ul {
+    text-transform: uppercase;
+    padding: 0;
+    list-style: none;
+}
+section div.promo ul li{
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    vertical-align: top;
+}
+section div.promo ul li:last-child {
+    margin-right: 0px;
+}
+div.featuresTitle {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 80px;
+    font-weight: bold;
+}
+li.features p {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+div.featuresTitle:after {
+    content: "";
+    display: table;
+    min-width: 30px;
+    min-height: 30px;
+    background: url(pic/romb.png) no-repeat;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    margin-left: -15px;
+}
+div.promo:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*Основной блок*/
+
+div.indexSection {
+    background: rgb(240, 240, 240) url(pic/fonSection.jpg);
+    clear: both;
+    margin: 20px 0px;
+    text-transform: uppercase;
+}
+div.indexSection:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*Стили для левого и правого контейнера*/
+.leftIndexSection {
+    width: 330px;
+    float: left;
+    padding: 10px;
+    margin: 0px;
+    min-height: 400px;
+    padding-left: 75px;
+    padding-right: 40px;
+    padding-top: 30px;
+}
+.rightIndexSection {
+    width: 330px;
+    float: right;
+    margin: 0px;
+    padding: 20px 25px;
+    min-height: 400px;
+    padding-left: 75px;
+    padding-right: 40px;
+    padding-top: 30px;
+    position: relative;
+}
+.rightIndexSection:before{
+    content: "";
+    background: url(pic/polosa.png) no-repeat;
+    width: 8px;
+    height: 278px;
+    position: absolute;
+    top: 85px;
+    right: 465px;
+}
+div.indexSection h4 {
+    font-size: 30px;
+    margin-bottom: 42px;
+}
+/*Верхний левый контейнер*/
+div.leftIndexSection p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.data {
+    font-style: italic;
+    text-transform: capitalize;
+    font-family: Georgia;
+    font-weight: normal;
+    margin-bottom: 33px;
+}
+/*Верхний правый контейнер*/
+.rightIndexSection img {
+    border: 5px solid white;
+    width: 320px;
+    height: 190px;
+    margin-bottom: 55px;
+}
+/*Левый нижний контейнер*/
+.address, .time{
+    margin-top: 42px;
+    line-height: 20px;
+}
+.time {
+    margin-bottom: 44px;
+}
+
+/*Правый нижний контейнер*/
+.rightIndexSection p{
+    margin-bottom: 35px;
+}
+.rightIndexSection input[type="text"],
+.rightIndexSection input[type="tel"]{
+    width: 120px;
+    display: inline-block;
+    margin-top: 23px;
+    margin-right: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    font-family: 'PT Sans Narrow', "Arial Narrow", sans-serif;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.rightIndexSection input[type="text"]:nth-child(2),
+.rightIndexSection input[type="tel"]{
+    margin-right: 0px;   
+}
+.rightIndexSection input[type="submit"] {
+    width: 310px;
+    margin-top: 49px;
+    font-family: 'PT Sans Narrow', "Arial Narrow", sans-serif;
+    background: black;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+        
+}
+.rightIndexSection input[type="submit"]:hover {
+    background: white;
+    color: black;
+}
+
+/*Кнопки контейнера .indexSection*/
+div.indexSection a{
+    display: inline-block;
+    width: 160px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    background: black;
+    margin-right: 5px;
+}
+.leftIndexSection a {
+    margin-top: 25px
+}
+div.indexSection a:last-child {
+    margin-right: 0px;
+}
+div.indexSection a:visited,
+div.indexSection a:active, {
+  color: black;  
+}
+div.indexSection a:hover {
+    color: black;
+    background: white; 
+ }
+
+/*Подвал*/
+footer {
+    background: DimGrey url(pic/footer.png);    
+    text-transform: uppercase;
+/*    font: bold 15px "Arial Narrow";*/
+    color: white;
+    font-size: 14px;
+}
+footer p {
+    line-height: 26px; 
+}
+.contactsAddress,
+.socialButtons,
+.disainer{
+    float: left;
+    width: 310px;
+    margin-right: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    line-height: 12px;
+}
+.socialButtons {
+    text-align: center;
+}
+.socialButtons div.vk,
+.socialButtons div.fb,
+.socialButtons div.ins {
+    width: 43px;
+    height: 43px;
+    background: url(pic/vk.PNG);
+    display: inline-block;
+}
+.socialButtons div.fb {
+    background: url(pic/fb.PNG);
+}
+.socialButtons div.fb:hover {
+    background: url(pic/fbWhite.png)
+}
+ .socialButtons div.ins {
+   background: url(pic/ins.PNG);
+}
+.disainer a {
+    display: inline-block;
+    width: 190px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    background: black;
+}
+.disainer a:visited,
+.disainer a:active, {
+  color: black;  
+}
+.disainer a:hover {
+    color: black;
+    background: white;
+}
+.disainer{
+    float: right;
+    width: 190px;
+    margin-right: 0px;
+    text-align: center;
+}
+/*Всплывающее окно входа*/
+.pumput {
+    display: none;
+    width: 330px;
+    height: 350px;
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    margin-left: -230px;
+    background: white;
+    padding: 45px 65px;
+    text-transform: uppercase;
+}
+.pumput p {
+    margin: 25px 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.pumput input[type="login"],
+.pumput input[type="password"] {
+    width: 285px;
+    font-size: 20px;
+    margin: 15px 0px;
+    border: 2px solid black;
+    padding: 10px 30px 10px 10px;
+    text-transform: uppercase;
+}
+.pumput input[type="submit"] {
+    width: 330px;
+    font-size: 20px;
+    margin: 20px 0px;
+    background: black;
+    color: white;
+    padding: 10px 0px;
+    border: none;
+    text-transform: uppercase;
+}
+.pumput a {
+    float: right;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px dotted black;
+}
+.pumput input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+/*Страничка с Прайсом*/
+.price,
+.shop {
+    background: url(pic/fonSection.jpg);
+    text-transform: uppercase;
+}
+/*
+section.price,
+section.shop {
+    display: block;
+    box-shadow: 0 0 10px green;
+}
+*/
+.innerContent h1 {
+    font-size: 32px;
+    padding-top: 40px;
+    margin-bottom: 0px;
+}
+a#nav {
+    color: black;
+    background: none;
+    width: auto;
+    font-size: 16px;
+    position: relative;
+    margin-top: 10px;
+    display: inline-block;   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+a#nav:nth-child(n+3) {
+    margin-left: 45px;
+}
+a#nav:nth-child(n+3):before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: url(pic/BlackRomb.gif) no-repeat 50% 50%;
+    position: absolute;
+    top: 11px;
+    left: -30px;
+}
+/*Очень большой заголовок*/
+div.logotip {
+    text-align: center;
+}
+div.logotip h1 {    
+    font-size: 42px;
+    margin-top: 20px;
+    background: url(pic/indexFon.PNG);
+    display: inline;
+    padding: 0 10px;
+    z-index: 3;
+    position: relative;
+}
+div.logotip:before {
+    content: "";
+    position: relative;
+    display: block;
+    top: 26px;
+    border-bottom: 2px solid black;
+    z-index: 2;
+}
+/*КАК У АКАДЕМИИ
+.logotip {
+    margin-top: 3.55em;
+    margin-bottom: 4.5em;
+    text-align: center;
+}
+.logotip h1 {
+    position: relative;
+    display: inline;
+    font-size: 3.4em;
+    line-height: 1;
+    padding: 0 25px;
+    margin: 0;
+    z-index: 2;
+    background: url(pic/indexFon.PNG)
+}
+.logotip:after {
+    position: relative;
+    content: "";
+    display: block;
+    border-bottom: 2px solid black;
+    top: -1.0em;
+    z-index: 1;
+}
+*/
+
+.price .leftInnerContent {
+    width: 450px;
+    float: left;
+    margin: 0px;
+    min-height: 400px;    
+}
+.price .rightInnerContent {
+    width: 450px;
+    float: right;
+    margin: 0px;
+    min-height: 400px;
+    position: relative;
+}
+.price h2 {
+    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 35px;
+    width: 250px;
+}
+.price li {
+    list-style: none;
+    list-style-image: url(pic/BlackRomb.gif);
+    list-style-position: inside;
+    margin: 10px 0px;
+}
+.price table {
+    border-collapse: collapse;
+}
+.price td,
+.price th {
+    width: 225px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: 5px;
+}
+.price td {
+    text-align: center;
+}
+.price th {
+    text-align: left;
+    padding: 5px 10px;
+}
+.price .leftInnerContent p,
+.price .rightInnerContent p{
+    margin-top: 40px;
+   margin-bottom: 70px;
+    line-height: 25px;
+}
+.price .rightInnerContent p {
+    margin-top: 133px;
+}
+
+
+/*СТРАНИЧКА МАГАЗИНА*/
+.shop .leftInnerContent {
+    width: 220px;
+/*    border: 1px red solid;*/
+    float: left;
+    margin: 0px;
+    min-height: 400px; 
+}
+.shop .rightInnerContent {
+    width: 700px;
+    float: right;
+    margin: 0px;
+    min-height: 400px;
+    padding-top: 45px;
+    font-size: 0px;
+}
+.shop h2{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.shop li {
+    list-style: none;    
+}
+.proizvoditeli a,
+.tovari a {
+   text-decoration: none;
+   color: black;
+    display:inline-block;
+}
+.proizvoditeli a {
+    width: 170px;
+    padding: 10px 10px 10px 40px;
+    background: url(pic/kvadrat.PNG) no-repeat 0% 50%;
+}
+.proizvoditeli a:hover {
+    background: url(pic/kvadratActive.PNG) no-repeat 0% 50%;
+}
+.tovari a {
+    width: 210px;
+    padding: 10px 0px 10px 10px;
+    margin: 5px 0px;
+    color: white;
+    background: black;
+}
+
+.tovari .active {
+    color: black;
+    background: white;
+}
+.content {
+/*    border: 1px red solid;*/
+    background: #ffffff;
+    display: inline-block;
+    width: 220px;
+    min-height: 285px;
+    margin-right: 19px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px DimGrey;
+}
+.content .img {
+    width: 220px;
+    height: 165px;
+    margin: 5px auto;
+}
+.content img {
+    display: block;
+    margin: 0 auto;
+}
+.content:nth-child(3n) {
+    margin-right: 0px;
+}
+.content p {
+    margin: 10px 0px;
+    padding: 10px 0px;
+    line-height: 20px;
+    display: block;
+    width: 90%;
+    min-height: 40px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+.content a {
+    display: block;
+    width: 90%;
+    text-align: center;
+    padding: 10px 0px;
+    text-decoration: none;
+    background: rgb(229, 229, 229);
+    color: black;
+    margin: 0 auto 20px;
+    font-size: 16px;
+}
+.content a:hover {
+    background: black;
+    color: white;
+}
+.pageNav {
+    clear:both;
+    
+    height: auto;
+/*    display: inline-block;*/
+}
+.pageNav a {
+    font-size: 16px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    float: left;
+    padding: 15px 21px;
+    background: black;
+    margin: 15px 5px 50px 0px;
+    
+}
+.pageNav a.active {
+    color: black;
+    background: white;
+    padding-bottom: 10px;
+    border-bottom: 5px solid black;        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
